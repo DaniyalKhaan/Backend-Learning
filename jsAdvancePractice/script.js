@@ -26,3 +26,23 @@ let allElementsAre5 = array.map(val => {
 });
 
 console.log("Array of number 5 elements: " + allElementsAre5);
+
+
+// Now array.filter 
+// what array.filter does is it filter only elements you need instead of copying complete array like map function does
+let oneTwo = array.filter(val => {
+    return val < 3;
+})
+
+console.log(oneTwo);
+
+// Now lets revise array.find 
+// array.find: we can search for an element inside an array if the element is present in the 
+// array it will return the element one thing to note that it will return only one element so if there is a case wehere 
+// there are more than one same element in array it will return the first one
+
+let arrayFind = array.find(val => {
+    return val === 4
+})
+
+console.log(arrayFind)
